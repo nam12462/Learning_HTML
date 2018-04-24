@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title> Log in </title>
+	<link rel="stylesheet" href="styles.css">
+<script>
+<!-- https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock -->
+function Time(){
+	var D = new Date();
+	var H = D.getHours();
+	var M = D.getMinutes();
+	var S = D.getSeconds();
+	M = checkT(M);
+	S = checkT(S);
+	document.getElementById("current_time").innerHTML = H + ":" + M + ":" + S;
+	var currently = setTimeout(Time,500);
+	}
+
+function checkT(i){
+	if (i<10){	
+		i = "0" + i
+		};
+	return i;
+}
+
+function check(){
+	var y = document.getElementById("un").value;
+	var x = document.getElementById("pw").value;	
+	if(y == "" && x == "" ){
+		alert("missing username and password");
+	}else if(y == "z" && x == ""){ 
+	/*the value in y is just a random placeholder to test*/
+		alert("missing password");
+	}else if(y == "" && x == "yes"){
+	/*the value in x is just a random placeholder to test*/
+		alert("missing username");
+	}else{
+		alert("Welcome");
+	}
+}
+</script>
+
+</head>
+
+<body class="page_body" onload="Time()">
+<p>
+	<form class="page_content">
+		<legend class="page_title">Exploration</legend>
+		Welcome to my Page.<br>
+		Please log in.<br>
+		<input type="text" name="userID" id="un" placeholder="User Name"><br>
+		<input type="password" name="pw" id = "pw" placeholder="password"><br>
+		<input class="submit_button" type="submit" value="Submit" onclick="check()">
+	</form>
+</p>
+
+<p class="page_content">
+
+	This is a simple test to see how to implement a simple login screen. 
+	Althought it does not fucntion perfectly it is still a proof of concept of
+	how this page should go and be set up.
+
+</p>
+
+<div style="text-align:center" id="current_time"></div>
+
+</body>
+
+<html>

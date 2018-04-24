@@ -1,0 +1,18 @@
+.page_body{
+	background-color: lightblue;
+}
+.page_title{
+	color: green;
+	font-size: 50px;
+	padding: 5px;
+	text-align: center;
+}
+.page_content{
+	color: green;
+	border: 2px solid DodgerBlue;
+	padding: 5px;
+	text-align: center;
+}
+.submit_button{
+	align: center;
+}
