@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>First Bootstrap</title>
+<meta charset="utf-8>
+<!--Used to support versions of Microsoft browser-->
+<meta http-equiv="X-UA-Compatible" content="IE-egde"> 
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<!--Bootstraps style-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+<!--used for javascript plugins-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--includes the plugins for javascript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+	h1{
+		text-align: center;
+	}
+	a {
+		color: DodgerBlue;
+	}
+	body{
+		background-color: LightGreen;
+	}
+	.Cborder{
+		border: solid 1px DodgerBlue;
+	}
+</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default Cborder">
+		<div class="container">
+			<div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar0" aria-expanded="false" aria-controls="navbar"<span class="navbar-toggler-icon"></span>
+				<!--This section below is used to make the icon bar when the screen is small-->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Welcome</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar0">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="nav-item nav-link" href="#">Home</a></li>
+					<li><a class="nav-item nav-link" href="#">Features</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						References</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+									<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+							</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+		
+	<div class="jumbotron text-center Cborder">
+		<div class="container">
+			<h1>First Webpage with Bootstrap</h1>	
+		</div>
+	</div>
+		
+		
+<!-- If ads are put in must use "container-fluid" so that the page will align correctly. -->
+	<div class="container text-center">
+	
+<!-- Can put in an ads section as needed.
+	<div class="row-content">
+		<div class="col-sm-2 sidenav">
+			<div class="well Cborder">
+				<p>Ads</p>
+			</div>
+			<div class="well Cborder">
+				<p>Ads</p>
+			</div>	
+		</div>
+		<div class="col-sm-8">
+-->
+
+		<h2 style="text-align: center">This was a simple test</h2>
+		<div class="row">
+			<div class="jumbotron col-sm-4 Cborder">
+				<p>filler</p>
+			</div>
+			<div class="jumbotron col-sm-4 Cborder">
+				<p>filler</p>
+			</div>
+			<div class="jumbotron col-sm-4 Cborder">
+				<p>filler</p>
+			</div>
+		</div>
+	
+<!-- Can put in an ads section as wanted.	
+	</div>
+		<div class="col-sm-2 sidenav">
+			<div class="well Cborder">
+				<p>Ads</p>
+			</div>
+			<div class="well Cborder">
+				<p>Ads</p>
+			</div>	
+		</div>
+
+		</div>
+-->	
+	</div>
+	
+	<div class="text-center">
+		<a href="#">Back to top</a>
+	</div>
+	
+</body>
+</html>
