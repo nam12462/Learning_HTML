@@ -1,0 +1,23 @@
+html, body{
+	overflow-x: hidden;
+}
+body{
+	padding-top: 60px;
+	background: linear-gradient(to bottom right, #CC0000 0%, #FF9900 100%)
+}
+.jumbotron{
+	background: linear-gradient(to bottom, #33CCFF 0%, #FF99CC 100%)
+}
+p{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.list-group-item{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.navbar-default{
+	background-color: #3386FF;
+	border: 1px solid #3386FF; //This was used to hide the white section of the navbar that was showing though.
+}
