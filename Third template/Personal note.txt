@@ -1,0 +1,1 @@
+While creating the template I was building based off of the bootstrap grid layouts and was getting confused as to why I was getting the body section to stack on top of each other instead of side by side.  I finally realized that the problem was that I was creating new rows for each item. After removing the rows I manged to get the information to align in the way I desired.
